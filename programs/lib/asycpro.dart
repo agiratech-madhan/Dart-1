@@ -4,8 +4,6 @@ int calculate() {
 
 List<int> getfibonacci() {
   int n = 10;
-//   void main(){
-//  int n = 10; // number of Fibonacci numbers to generate
 
   List<int> fibonacciSeries = [0, 1];
 
@@ -13,4 +11,12 @@ List<int> getfibonacci() {
     fibonacciSeries.add(fibonacciSeries[i - 1] + fibonacciSeries[i - 2]);
   }
   return fibonacciSeries;
+}
+
+String reverseString(String value) {
+  String reversed = '';
+  for (int i = value.length - 1; i >= 0; i--) {
+    reversed += value[i];
+  }
+  return reversed;
 }

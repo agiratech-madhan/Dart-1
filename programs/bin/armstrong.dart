@@ -11,8 +11,7 @@ void main() {
     var number = i;
     var digits = number.toString().split('');
        num sum = 0;
-
-    
+//
     var length = digits.length;
     for (var digit in digits) {
       sum += power(int.parse(digit), length);
